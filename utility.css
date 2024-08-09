@@ -1,0 +1,110 @@
+.border {
+    border: 2px solid red;
+    margin: 3px;
+}
+.flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-items {
+    align-items: center;
+}
+.bg-black{
+    background-color: black;
+    color: white;
+}
+.bg-grey{
+    background-color: #121212;
+    color: white;
+}
+
+.bg-grey-2{
+    background-color: #101010;
+    color: white;
+}
+
+.invert{
+    filter: invert(1);
+}
+.rounded{
+    border-radius: 7px;
+}
+.m-1{
+    margin: 5px;
+}
+.p-1{
+    padding: 20px;
+}
+
+
+/* WebKit (Chrome, Safari, Opera) */
+::-webkit-scrollbar {
+    width: 10px;
+    /* Adjust width as needed */
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    /* Transparent track */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: grey;
+    border-radius: 5px;
+    /* Optional rounded corners */
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(173, 173, 173);
+}
+
+::-webkit-scrollbar-button {
+    /* Hide arrows */
+    display: none;
+}
+
+/* Firefox */
+/* * {
+    scrollbar-width: thin;
+    scrollbar-color: grey transparent !important;
+
+} */
+
+
+/* volume slider */
+.slider {
+    -webkit-appearance: none;
+    border-radius: 15px;
+    width: 15px;
+    height: 20%;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #e83c3c;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    background: #e83c3c;
+    cursor: pointer;
+}

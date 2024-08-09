@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="shortcut icon" href="/assets/images/spotify-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utility.css" />
+  </head>
+  <body oncontextmenu = "return false">
+    
+    <main class="container flex bg-black">
+      <div class="left">
+        <div class="home bg-grey rounded m-1 p-1">
+          <div class="logo">
+            <img class="invert" src="/assets/images/logo.svg" alt="logo" />
+          </div>
+          <div id="cancel"><img src="/assets/images/cancel.svg" alt=""></div>
+          <ul>
+            <li>
+              <img
+                class="invert"
+                src="/assets/images/home.svg"
+                alt="home"
+              />Home
+            </li>
+            <li>
+              <img
+                class="invert"
+                src="/assets/images/search.svg"
+                alt="search"
+              />Search
+            </li>
+          </ul>
+        </div>
+        <div class="library rounded bg-grey m-1 p-1">
+          <div class="heading">
+            <img class="invert" src="/assets/images/library.svg" alt="" />
+            <h2>Your Library</h2>
+          </div>
+          <div class="songList">
+            <ul>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="right rounded">
+        <div class="header bg-grey-2 rounded">
+          <div class="nav">
+            <div id="hamburger"><img src="/assets/images/hamburger.svg" alt="menu"></div>
+            <button>
+              <img class="invert nav-button" id="nav-button-left" src="/assets/images/left.svg" alt="left" />
+            </button>
+            <button>
+              <img class="invert nav-button" id="nav-button-right" src="/assets/images/right.svg" alt="right" />
+            </button>
+          </div>
+          <div class="buttons">
+            <button id="signup-btn">Sign up</button>
+            <button id="login-btn">Log in</button>
+          </div>
+        </div>
+        <div class="spotifyPlaylists">
+          <div class="sub-heading">
+            <h2>Spotify Playlists</h2>
+          </div>
+          <div class="cardContainer">
+          </div>
+          <div id="play-bar" style="opacity: 0; visibility: hidden;"> 
+            <div id="above-bar">
+            <div id="song-info"></div>
+              <div class="song-buttons invert">
+                <img id="previous-song-play" src="/assets/images/previous.svg" alt="">
+                <img id="song-play" src="/assets/images/paused.svg" alt="">
+                <img id="next-song-play" src="/assets/images/next.svg" alt="">
+              </div>
+              <div class="time-and-volume">
+                <div id="song-time">
+                </div>
+                <div id="volume-bar">
+                  <img id="vol" src="/assets/images/volume-max.svg" alt="">
+                  <div id="vol-range" style="visibility: hidden; opacity: 0;">
+                      <input class="slider" type="range" value="100" name="volume-bar" style=" writing-mode: vertical-lr">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="seekbar">
+              <div class="circle"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+    <script src="utility.js"></script>
+    <script src="prevent.js"></script>
+  </body>
+</html>
